@@ -1,5 +1,5 @@
 #include "TestHarness.h"
-
+#include "../factorial.h"
 
 // include the header file for the class you are testing.
 
@@ -7,7 +7,8 @@
 
 // replace testName with the name of the particular test. Replace ClassName with
 // the name of the class being tested
-TEST(test,testing)
+TEST(factorial_template, factorial)
 {
-	CHECK(1==1);
+  Factorial<int> my_fact;
+  CHECK_EQUAL(6,my_fact.fact(3))
 }
