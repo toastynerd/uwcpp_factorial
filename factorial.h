@@ -12,6 +12,6 @@ class Factorial
 public:
   T fact(T num)
   {
-    return (num < 2 ? 1 : num * fact(num-1));
+    return (num < 2 ? 1 : num * fact(num-1)); // if n is < 2 return one else keep moving "down" the factorial chain
   }
 };
